@@ -2,6 +2,7 @@ package ca.piggott.everquest.spells.model;
 
 
 public enum SpellEffect {
+ 
 	ATTRIB_0("Hitpoints", 26),
 	ATTRIB_1("Armour Class", 1),
 	ATTRIB_2("Attack", 1),
@@ -309,9 +310,9 @@ public enum SpellEffect {
 	ATTRIB_427("Trigger $spellBase on fade", 47),
 	ATTRIB_428("Limit: Skill ${skillBase}",47),
 	UNKNOWN("UNKNOWN",-1);
-	
-	
+
 	public final String name;
+
 	public final int display;
 
 	private SpellEffect(String name, int display) {
