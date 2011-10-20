@@ -1,18 +1,37 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <artifactId>spells-parent</artifactId>
-    <groupId>ca.piggott.everquest.spells</groupId>
-    <version>0.0.1-SNAPSHOT</version>
-    <relativePath>..</relativePath>
-  </parent>
-  <artifactId>common</artifactId>
-  <name>EverQuest Spell Model</name>
-  <dependencies>
-  	<dependency>
-  		<groupId>javax.jdo</groupId>
-  		<artifactId>jdo-api</artifactId>
-  		<version>3.0</version>
-  	</dependency>
-  </dependencies>
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>spells-parent</artifactId>
+		<groupId>ca.piggott.everquest.spells</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+
+	<artifactId>common</artifactId>
+	<name>EverQuest Spell Common</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.jdo</groupId>
+			<artifactId>jdo-api</artifactId>
+			<version>3.0</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>downloads-maven-plugin</artifactId>
+				<version>0.2</version>
+				<configuration>
+					<description>${project.version} release of ${project.name}</description>
+					<override>true</override>
+					<includeAttached>true</includeAttached>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>

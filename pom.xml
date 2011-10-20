@@ -1,13 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>ca.piggott.everquest.spells</groupId>
-  <artifactId>spells-parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>EverQuest Spells</name>
-  <description>Common utils for EverQuest spells</description>
-  <modules>
-  	<module>parser</module>
-  	<module>common</module>
-  </modules>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ca.piggott.everquest.spells</groupId>
+	<artifactId>spells-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>EverQuest Spells</name>
+	<description>Common utils for EverQuest spells</description>
+
+	<url>https://github.com/mrjpiggott/ca.piggott.everquest.spells</url>
+
+	<scm>
+		<url>https://github.com/mrjpiggott/ca.piggott.everquest.spells</url>
+		<connection>scm:git:git://github.com/mrjpiggott/ca.piggott.everquest.spells.git</connection>
+		<developerConnection>scm:git:git@github.com:mrjpiggott/ca.piggott.everquest.spells.git</developerConnection>
+	</scm>
+
+	<modules>
+		<module>parser</module>
+		<module>common</module>
+	</modules>
+
 </project>
